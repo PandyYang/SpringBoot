@@ -1,0 +1,13 @@
+server:
+  port: 8900
+spring:
+  application:
+    name: consumer-order
+user:
+  url: http://localhost:7901/user/
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://user:123@localhost:10000/eureka
