@@ -11,8 +11,12 @@
     <modules>
         <module>apigateway-zuul</module>
         <module>provider-user</module>
-        <module>provider-order</module>
+        <module>consumer-order</module>
         <module>eureka</module>
+        <module>ribbon</module>
+        <module>feign</module>
+        <module>hystrix</module>
+        <module>hystrixdashboard</module>
     </modules>
 
     <parent>
