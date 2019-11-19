@@ -25,4 +25,10 @@ public class OrderController {
         User user = restTemplate.getForObject(url+id,User.class);//通过rest获得json数据然后转换成user对象
         return user;
     }
+
+    @GetMapping("/discovery")
+    public Object discovery(){
+        String url2 = "http://localhost:7901/provider/discovery";
+        return restTemplate.getForObject(url2,Object.class);
+    }
 }
